@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 6;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header h2 {
+    font-size: 2rem;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+}
+
+.section-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.field-text-home h1 {
+    font-size: 2.5rem;
+}
+
+.field-text-home h3 {
+    font-size: 1.5rem;
+}
+
+.field-image-home img {
+    max-width: 200px;
+    height: auto;
+}
+
+.swipe-up {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container-about {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skill {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container-image-skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field-image-skill {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-skill {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Project Section */
+.project {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field-project {
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.link-to-project img {
+    width: 100%;
+    height: auto;
+}
+
+.technology-project {
+    display: flex;
+    gap: 10px;
+}
+
+/* Certification Section */
+.certification {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container-certificate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field-certificate {
+    position: relative;
+    margin: 20px;
+}
+
+.img-certificate {
+    width: 200px;
+    height: auto;
+}
+
+.overlay-image-certificate {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-home {
+        flex-direction: column;
+    }
+
+    .field-image-home img {
+        max-width: 100%;
+    }
+
+    .container-image-skill {
+        flex-direction: column;
+    }
+
+    .field-project {
+        width: 100%;
+    }
+}
